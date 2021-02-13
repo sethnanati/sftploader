@@ -8,7 +8,7 @@ from time import sleep
 
 logging.basicConfig(level=logging.WARNING)
 logger = logging.getLogger('niupload')
-hdlr = logging.FileHandler('D://Daily_backup//upload.log')
+hdlr = logging.FileHandler('upload.log')
 formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
 hdlr.setFormatter(formatter)
 logger.addHandler(hdlr)
