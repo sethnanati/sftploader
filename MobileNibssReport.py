@@ -40,7 +40,7 @@ def nibsslogger():
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
     try:
-        logger.debug('Starting NIBSS Connection:')
+        logger.debug('Starting IBSS Connection:')
         ssh.connect(hostname,port,username,password)
         transport= ssh.get_transport()
         #print(transport)
